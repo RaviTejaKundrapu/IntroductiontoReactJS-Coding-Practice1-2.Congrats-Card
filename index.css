@@ -1,0 +1,116 @@
+/* Write your code here. */
+
+body {
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/congrats-card-bg.png');
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 34px;
+  text-align: center;
+}
+
+.user-profile-container {
+  background-color: #cffafe;
+  height: 76%;
+  width: 86%;
+  border: 1px solid;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.profile-img {
+  height: 110px;
+  width: 110px;
+}
+
+.profile-text-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.name-styles {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 26px;
+  text-align: center;
+}
+
+.education-styles {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 13px;
+  text-align: center;
+}
+
+.watch-img {
+  height: 110px;
+  width: 104px;
+}
+
+@media all and (min-width: 576px) {
+  .user-profile-container {
+    width: 79%;
+  }
+  .profile-img {
+    height: 160px;
+    width: 160px;
+  }
+  .watch-img {
+    height: 140px;
+    width: 126px;
+  }
+  .name-styles {
+    font-size: 44px;
+  }
+  .education-styles {
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .heading {
+    font-size: 49px;
+  }
+  .user-profile-container {
+    width: 65%;
+  }
+  .profile-img {
+    height: 160px;
+    width: 160px;
+    margin-bottom: 9px;
+  }
+  .watch-img {
+    height: 165px;
+    width: 133px;
+    margin-top: 9px;
+    flex-shrink: 1;
+  }
+  .name-styles {
+    font-size: 39px;
+    margin: 3px;
+  }
+  .education-styles {
+    font-size: 19px;
+    margin: 3px;
+  }
+}
